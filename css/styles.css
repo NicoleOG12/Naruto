@@ -5,8 +5,21 @@
 }
 
 body{
-    background-color: #41c3ff;
+    background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(255,248,0,1) 49%, rgba(255,115,6,1) 100%);
     
+}
+
+/* Responsividade */
+
+
+@media only screen and (max-width: 1080px) {
+    .carousel{
+        height: 400px;
+    }
+
+    .footer{
+        height: 0px;
+    }
 }
 
 
@@ -26,7 +39,7 @@ body{
     border-radius: 20px;
     /* box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.175); */
     width: 100%;
-    border: 5px solid #ff9900;
+    border: 5px solid #0095ff;
     box-shadow: 0 0 0 5px rgb(19, 19, 19);
 }
 
@@ -46,7 +59,7 @@ header{
     display: flex;
     /* justify-content: space-around; */
     /* padding: 1px 1px; */
-    /* background-color: #57a5ff; */
+    background-color: #00000022;
     /* Background-image: Linear-gradient(red, #ff9ac9); */
     color: antiquewhite;
     padding-left: 3%;
@@ -117,7 +130,7 @@ a:hover{
     border-radius: 20px;
     color: #ff0000;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.175);
-    border: 2px solid orange;
+    border: 2px solid rgb(0, 132, 255);
 }
 
 .carousel-inner{
@@ -127,13 +140,14 @@ a:hover{
 }
 
 
+
 .carousel-item{
     height: 600px;
 }
 
 
 .produtos-img{
-    height: 80%;
+    height: 75%;
     width: 100%;
     transition: 0.5s;
 }
@@ -211,7 +225,7 @@ footer .blocos-rodape .rodape-atributos{
     width: 100%;
     padding: 10px;
     position: relative;
-    bottom: 7%;
+    bottom: 13%;
 }
 
 .icon-add-carrinho {
@@ -235,10 +249,12 @@ footer .blocos-rodape .rodape-atributos{
     text-decoration: none;
     outline: none;
     transition: 0.5s;
+    bottom: 19%;
+    position: relative;
 }
 
 .btn-comprar:hover{
-    box-shadow: 0px 0px 10px rgb(255, 115, 0);
+    box-shadow: 1px 1px 7px rgb(255, 84, 152);
 }
 
 .btn-comprar:focus {
