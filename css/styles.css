@@ -178,6 +178,7 @@ footer{
     background-color: #00a2ec;
     color: aliceblue;
     margin-top: 10%; 
+    justify-content: center;
 }
 
 footer .blocos-rodape{
@@ -188,12 +189,14 @@ footer .blocos-rodape{
     /* text-align: center; */
     font-family: "Oxanium", sans-serif;
     font-size: 20px;
+    text-align: center;
 }
 
 footer .blocos-rodape .titulo-rodape{
     font-family: "Oxanium", sans-serif;
     font-weight: 500;
     text-shadow: 1px 1px 6px black;
+    text-align: center;
 }
 
 .nome{
@@ -204,6 +207,7 @@ footer .blocos-rodape .titulo-rodape{
 footer .blocos-rodape .rodape-atributos{
     text-decoration: underline;
     transition: 0.5s;
+    text-align: center;
 }
 
 .rodape-atributos:hover{
