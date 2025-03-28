@@ -1,49 +1,43 @@
 * {
     margin: auto;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(255,248,0,1) 49%, rgba(255,115,6,1) 100%);
-    
 }
 
-header{
+header {
     display: flex;
     background-color: #00000022;
     color: antiquewhite;
     padding-left: 3%;
-    margin: 0px 0px;
     margin-bottom: 3%;
 }
 
-header nav{
+header nav {
     display: flex;
     width: 10%;
     gap: 15%;
     justify-content: flex-end;
-    flex-direction: row;
 }
 
-a{
+a {
     color: antiquewhite;
     transition: 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    position: relative;
-    font-weight: 500;
     font-size: 18px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
     text-decoration: underline;
 }
 
-a:hover{
+a:hover {
     color: #ffa048;
     text-decoration: none;
 }
 
-.a-nav:hover{
+.a-nav:hover {
     color: #ffa048;
     text-decoration: none;
     background-color: #007ce2;
@@ -51,21 +45,21 @@ a:hover{
     padding: 10px;
 }
 
-.profile{
+.profile {
     width: 200px; 
     height: 100px;
     padding: auto;
     margin: 0;
 }
 
-.profile-name{
+.profile-name {
     display: flex;
     gap: 20%;
     margin: 10px;
     align-items: center;
 }
 
- footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,9 +94,60 @@ footer p {
     width: 100%;
 }
 
+.table td, .table th {
+    vertical-align: middle;
+}
 
-@media only screen and (max-width: 1080px) {
-    .footer{
-        height: 0px;
+.table th {
+    background-color: #00a2ec;
+    color: #212529;
+}
+
+.table input {
+    width: 60px;
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.total{
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
     }
 }

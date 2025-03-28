@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naruto Pop</title>
-    <link rel="stylesheet" href="./css/carrinho.css">
+    <title>Carrinho de Compras - Naruto Pop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/carrinho.css">
 </head>
 
 <body>
     <header>
         <div class="profile-name">
-        <img src="img/Adobe Express - file.png" alt="" class="profile">
+            <img src="img/Adobe Express - file.png" alt="Logo da loja" class="profile">
         </div>
-
         <nav>
             <a class="a-nav" href="./index.html">Home</a>
             <a class="a-nav" href="./sobre.html">Sobre</a>
@@ -22,18 +21,56 @@
         </nav>
     </header>
 
-  
+    <div class="container mt-5">
+        <h2>Carrinho de Compras</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Funko Pop Naruto as Nine Tails</td>
+                    <td>R$ 99,90</td>
+                    <td>
+                        <input type="number" class="form-control" value="1" min="1">
+                    </td>
+                    <td>R$ 99,90</td>
+                    <td><button class="btn btn-danger">Remover</button></td>
+                </tr>
+                <tr>
+                    <td>Funko Pop Naruto Gamakichi</td>
+                    <td>R$ 89,90</td>
+                    <td>
+                        <input type="number" class="form-control" value="1" min="1">
+                    </td>
+                    <td>R$ 89,90</td>
+                    <td><button class="btn btn-danger">Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <h3>Total: R$ 189,80</h3>
+            <button class="btn btn-primary">Finalizar Compra</button>
+        </div>
+    </div>
+
     <footer>
         <div class="links-rodape">
             <a href="" class="rodape-atributos">Política de Privacidade</a>
             <a href="" class="rodape-atributos">Termos e Condições</a>
         </div>
-        <p>© 2025</p>
+        <p>© 2025 Naruto Pop</p>
     </footer>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
