@@ -23,8 +23,7 @@ header{
 header nav{
     display: flex;
     width: 10%;
-    gap: 15%;
-    justify-content: flex-end;
+    gap: 45%;
     flex-direction: row;
 }
 
@@ -38,6 +37,11 @@ a{
     font-size: 18px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
     text-decoration: underline;
+}
+
+.a-nav i {
+    font-size: 40px;
+    color: #ffffff;    
 }
 
 a:hover{
