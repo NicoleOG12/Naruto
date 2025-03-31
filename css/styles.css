@@ -73,8 +73,7 @@ header{
 header nav{
     display: flex;
     width: 10%;
-    gap: 15%;
-    justify-content: flex-end;
+    gap: 45%;
     flex-direction: row;
 }
 
@@ -170,49 +169,53 @@ a:hover{
     
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 50vh;
-    background-color: #00a2ec;
-    color: aliceblue;
-    margin-top: 10%; 
-    justify-content: center;
-}
 
-footer .blocos-rodape{
-    /* background-color: #ff964a; */
-    width: 25%;
-    height: 70%;
-    padding: 1%;
-    /* text-align: center; */
-    font-family: "Oxanium", sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-footer .blocos-rodape .titulo-rodape{
-    font-family: "Oxanium", sans-serif;
-    font-weight: 500;
-    text-shadow: 1px 1px 6px black;
-    text-align: center;
-}
 
 .nome{
     font-size: 20px;
     text-shadow: 1px 1px 6px rgba(8, 8, 8, 0.575);
 }
 
-footer .blocos-rodape .rodape-atributos{
-    text-decoration: underline;
-    transition: 0.5s;
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #00a2ec;
+    color: aliceblue;
+    margin-top: 10%;
+}
+
+footer .links-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 10px;
     text-align: center;
 }
 
-.rodape-atributos:hover{
+footer .rodape-atributos {
     text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer .rodape-atributos:hover {
     color: #ffa048;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .footer{
+        height: 0px;
+    }
 }
 
 /* .container .item .icon-add-carrinho{
@@ -225,11 +228,12 @@ footer .blocos-rodape .rodape-atributos{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 56%; /* Espaçamento entre ícone e botão */
+    gap: 35%; /* Espaçamento entre ícone e botão */
     width: 100%;
     padding: 10px;
     position: relative;
     bottom: 13%;
+    padding-top: 10px;
 }
 
 .icon-add-carrinho {
