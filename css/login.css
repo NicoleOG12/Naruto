@@ -6,9 +6,11 @@
 
 /*Cor de fundo*/
 body {
-    background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(255,248,0,1) 49%, rgba(255,115,6,1) 100%);
+    background: linear-gradient(90deg, 
+    rgba(255,95,0,1) 0%, 
+    rgba(255,248,0,1) 49%, 
+    rgba(255,115,6,1) 100%);
 }
-
 
 
 /*Colocar fundo no header */
