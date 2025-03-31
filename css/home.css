@@ -1,0 +1,253 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+body {
+    background: linear-gradient(90deg, 
+    rgba(255,95,0,1) 0%, 
+    rgba(255,248,0,1) 49%, 
+    rgba(255,115,6,1) 100%);
+}
+
+header{
+    display: flex;
+    background-color: #00000022;
+    color: antiquewhite;
+    padding-left: 3%;
+    margin: 0px 0px;
+    margin-bottom: 3%;
+}
+
+header nav{
+    display: flex;
+    width: 10%;
+    gap: 45%;
+    flex-direction: row;
+}
+
+a{
+    color: antiquewhite;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
+}
+
+.a-nav i {
+    font-size: 40px;
+    color: #ffffff;    
+}
+
+a:hover{
+    color: #ffa048;
+    text-decoration: none;
+}
+
+.a-nav:hover{
+    color: #ffa048;
+    text-decoration: none;
+    background-color: #007ce2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.profile{
+    width: 200px; 
+    height: 100px;
+    padding: auto;
+    margin: 0;
+}
+
+.profile-name{
+    display: flex;
+    gap: 20%;
+    margin: 10px;
+    align-items: center;
+}
+
+.carousel{
+    width: 95%;
+    height: 505px;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    color: #ff0000;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.247);
+    border: 2px solid rgb(0, 132, 255);
+}
+
+.carousel-inner{
+    height: 500px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.carousel-item{
+    height: 600px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+    width: 100%;
+    border: 5px solid #0095ff;
+    box-shadow: 0 0 0 5px rgb(19, 19, 19);
+}
+
+.titulo-produtos{
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    
+}
+
+.item{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 3%;
+    margin-left: 5px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.175);
+}
+
+
+
+.produtos-img{
+    height: 75%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.produtos-img:hover {
+    transform: scale(1.2);
+    border: 2px solid;
+    border-color: rgb(247, 137, 188);
+    box-shadow: 1px 5px 10px rgba(255, 146, 213, 0.568);
+}
+
+.container-desc-produtos{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    background-color: #ffffff;
+    width: 90%;
+    border-radius: 30px;
+}
+
+.container-add-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35%; /* Espaçamento entre ícone e botão */
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 13%;
+    padding-top: 10px;
+}
+
+.icon-add-carrinho {
+    width: 25px; /* Reduz um pouco para equilibrar */
+    height: auto;
+    cursor: pointer;
+}
+
+.btn-comprar {
+    background-color: #F072AC;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    transition: 0.5s;
+    bottom: 19%;
+    position: relative;
+}
+
+.btn-comprar:hover{
+    box-shadow: 1px 1px 7px rgb(255, 84, 152);
+}
+
+.btn-comprar:focus {
+    outline: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #00a2ec;
+    color: aliceblue;
+    margin-top: 10%;
+}
+
+footer .links-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+footer .rodape-atributos {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer .rodape-atributos:hover {
+    color: #ffa048;
+}
+
+footer p {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+    .footer{
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .carousel{
+        height: 400px;
+    }
+
+    .footer{
+        height: 0px;
+    }
+}
