@@ -73,8 +73,7 @@ header{
 header nav{
     display: flex;
     width: 10%;
-    gap: 15%;
-    justify-content: flex-end;
+    gap: 45%;
     flex-direction: row;
 }
 
@@ -229,11 +228,12 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 56%; /* Espaçamento entre ícone e botão */
+    gap: 35%; /* Espaçamento entre ícone e botão */
     width: 100%;
     padding: 10px;
     position: relative;
     bottom: 13%;
+    padding-top: 10px;
 }
 
 .icon-add-carrinho {
