@@ -45,13 +45,24 @@ a{
     font-size: 40px;
     color: #ffffff;    
 }
-/* Colocar */
+/* Quando clicar a letra fica laranja  */
 .a-nav:hover{
     color: #ffa048;
     text-decoration: none;
     background-color: #007ce2;
     border-radius: 20px;
     padding: 10px;
+}
+.container .form button{
+    background-color: #007ce2
+}
+.button:hover{
+    color: #ffa048;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #007ce2;
+
 }
 /*Ajustar tamnho da logo*/
 .profile {
@@ -115,12 +126,18 @@ footer p {
         text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
         text-align: justify;
         padding-top: 40px;
-        padding-left: 40px;
+        padding-left: 70px;
         padding-right: 40px;
-        background-color: #00000022;
+     
     
 }
 
+.container {
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(20, 20, 20, 0.267); 
+ }
 .forms input{
     width: 500px;
     
