@@ -134,7 +134,7 @@ footer p {
 
 .container {
     width: 500px;
-    height: 550px;
+    height: 450px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267); 
  }
@@ -156,32 +156,29 @@ h1{
     padding-top: 40px;
    
 }
-.botao{
+.botao {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente */
-      
-}
-.botao button{
-    width: 250px;
-    align-items: center;
+    padding-top: 10px;
 }
 
-.cadastrar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.botao .btn {
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff; /* Cor do fundo */
+    color: white;              /* Cor do texto */
+    border: none;              /* Remove a borda */
+    border-radius: 5px;        /* Bordas arredondadas */
+    text-decoration: none;     /* Remove sublinhado */
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;           /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Efeito de transição */
     
 }
-.cadastrar label{
-    color:  rgb(255, 255, 255);
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-  
-    
-}
-.a-cadastrar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: -10px;
+
+.botao .btn:hover {
+    background-color: #0056b3; /* Cor do fundo ao passar o mouse */
 }

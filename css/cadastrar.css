@@ -70,8 +70,8 @@ a:hover{
 }
 
 .container {
-    width: 700px;
-    height: 500px;
+    width: 500px;
+    height: 550px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267); 
  } 
@@ -82,12 +82,12 @@ a:hover{
     font-weight: 50;
     font-style: normal;
     text-align: justify;
-    padding-top: 20px;
-    padding-left: 90px;
-    padding-right: 60px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .forms input{
-    width: 500px;
+    width: 400px;
 }
 .button{
     text-align: center;
