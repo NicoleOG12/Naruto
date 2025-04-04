@@ -4,7 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Cor de fundo*/
 body {
     background: linear-gradient(90deg, 
     rgba(255,95,0,1) 0%, 
@@ -12,8 +11,6 @@ body {
     rgba(255,115,6,1) 100%);
 }
 
-
-/*Colocar fundo no header */
 header {
     display: flex;
     background-color: #00000022;
@@ -21,24 +18,41 @@ header {
     padding-left: 3%;
     margin-bottom: 3%;
 }
-/*Colocar os links para o lado */
-header nav{
+
+.profile-name {
+    display: flex;
+    gap: 20%;
+    margin: 10px;
+    align-items: center;
+}
+
+.profile {
+    width: 200px; 
+    height: 100px;
+    padding: auto;
+    margin: 0;
+}
+
+header nav {
     display: flex;
     width: 10%;
     gap: 45%;
     flex-direction: row;
 }
-/*Modificar a cor, e sombra */
-a{
-    color: antiquewhite;
+
+.a-nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     transition: 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    position: relative;
-    font-weight: 500;
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
-    text-decoration: underline;
+}
+
+.a-nav:hover {
+    color: #ffa048;
+    text-decoration: none;
+    background-color: #007ce2;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .a-nav .car i{
@@ -81,38 +95,108 @@ a{
 .a-nav .userp p {
     margin: 0;
 }
-/* Quando clicar a letra fica laranja  */
-.a-nav:hover{
-    color: #ffa048;
-    text-decoration: none;
-    background-color: #007ce2;
-    border-radius: 20px;
-    padding: 10px;
-}
-.container .form button{
-    background-color: #007ce2
-}
-.button:hover{
-    color: #ffa048;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #007ce2;
 
+a {
+    color: antiquewhite;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
+    transition: 0.5s;
 }
-/*Ajustar tamnho da logo*/
-.profile {
-    width: 200px; 
-    height: 100px;
-    padding: auto;
-    margin: 0;
+
+.container {
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: rgba(20, 20, 20, 0.267); 
 }
-/*Ajustar local do header*/
-.profile-name {
+
+.forms {
+    font-size: 22px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: justify;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.forms input {
+    width: 400px;
+}
+
+.container .form button {
+    background-color: #007ce2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container .form button:hover {
+    background-color: #005fb3;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.botao {
     display: flex;
-    gap: 20%;
-    margin: 10px;
+    justify-content: center;
     align-items: center;
+    padding-top: 10px;
+}
+
+.botao a {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #007ce2;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.botao a:hover {
+    color: #ffa048;
+    background-color: #005fb3;
+    transform: scale(1.05);
+}
+
+.botao .btn {
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao .btn:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -148,73 +232,4 @@ footer p {
     margin-top: 10px;
     text-align: center;
     width: 100%;
-}
-
-.forms{
-    
-    
-        font-size: 22px;
-        margin-bottom: 0%;
-        color: rgb(255, 255, 255);
-        font-family: "Oxanium", sans-serif;
-        font-weight: 50;
-        font-style: normal;
-        text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-        text-align: justify;
-        padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-     
-    
-}
-
-.container {
-    width: 500px;
-    height: 450px;
-    border-radius: 20px;
-    background-color: rgba(20, 20, 20, 0.267); 
- }
- 
-.forms input{
-    width: 400px;
-    
-}
-
-h1{
-    font-size: 40px;
-    margin-bottom: 0%;
-    color: rgb(255, 255, 255);
-    font-family: "Oxanium", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-    text-align: center;
-    padding-top: 40px;
-   
-}
-.botao {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    padding-top: 10px;
-}
-
-.botao .btn {
-    width: 250px;
-    padding: 10px;
-    text-align: center;
-    background-color: #007bff; /* Cor do fundo */
-    color: white;              /* Cor do texto */
-    border: none;              /* Remove a borda */
-    border-radius: 5px;        /* Bordas arredondadas */
-    text-decoration: none;     /* Remove sublinhado */
-    display: inline-block;
-    cursor: pointer;
-    font-size: 16px;           /* Tamanho da fonte */
-    transition: background-color 0.3s ease; /* Efeito de transição */
-    
-}
-
-.botao .btn:hover {
-    background-color: #0056b3; /* Cor do fundo ao passar o mouse */
 }
