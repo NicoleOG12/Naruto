@@ -38,9 +38,45 @@ a{
     text-decoration: underline;
 }
 
-.a-nav i {
-    font-size: 40px;
-    color: #ffffff;    
+.a-nav .car i{
+    font-size: 30px;
+    color: #ffffff;  
+    padding-top: 5px;  
+}
+
+.a-nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.a-nav .user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 120px;
+}
+
+.a-nav .userp {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.a-nav .userp p {
+    margin: 0;
+}
+
+.a-nav .user i {
+    font-size: 50px;
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.a-nav .userp p {
+    margin: 0;
 }
 
 a:hover{
