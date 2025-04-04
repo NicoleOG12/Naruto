@@ -1,10 +1,9 @@
 * {
     margin: auto;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
-/*Cor de fundo*/
 body {
     background: linear-gradient(90deg, 
     rgba(255,95,0,1) 0%, 
@@ -12,23 +11,22 @@ body {
     rgba(255,115,6,1) 100%);
 }
 
-
-/*Colocar fundo no header */
-header {
+header{
     display: flex;
     background-color: #00000022;
     color: antiquewhite;
     padding-left: 3%;
+    margin: 0px 0px;
     margin-bottom: 3%;
 }
-/*Colocar os links para o lado */
+
 header nav{
     display: flex;
     width: 10%;
     gap: 45%;
     flex-direction: row;
 }
-/*Modificar a cor, e sombra */
+
 a{
     color: antiquewhite;
     transition: 0.5s;
@@ -81,7 +79,12 @@ a{
 .a-nav .userp p {
     margin: 0;
 }
-/* Quando clicar a letra fica laranja  */
+
+a:hover{
+    color: #ffa048;
+    text-decoration: none;
+}
+
 .a-nav:hover{
     color: #ffa048;
     text-decoration: none;
@@ -90,8 +93,63 @@ a{
     padding: 10px;
 }
 
-.container .form button{
-    background-color: #007ce2
+.profile{
+    width: 200px; 
+    height: 100px;
+    padding: auto;
+    margin: 0;
+}
+
+.profile-name{
+    display: flex;
+    gap: 20%;
+    margin: 10px;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(20, 20, 20, 0.267); 
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.forms {
+    font-size: 22px;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
+    text-align: justify;
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+}
+
+.container .form button {
+    background-color: #007ce2;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .botao a {
@@ -111,19 +169,40 @@ a{
     transform: scale(1.05);
 }
 
-
-/*Ajustar tamnho da logo*/
-.profile {
-    width: 200px; 
-    height: 100px;
-    padding: auto;
-    margin: 0;
+.botao .btn {
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
-/*Ajustar local do header*/
-.profile-name {
+
+.botao .btn:hover {
+    background-color: #0056b3;
+}
+
+.cadastrar {
     display: flex;
-    gap: 20%;
-    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cadastrar label {
+    color: white;
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
+}
+
+.a-cadastrar {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -162,74 +241,9 @@ footer p {
     width: 100%;
 }
 
-.forms{
-    
-    
-        font-size: 22px;
-        margin-bottom: 0%;
-        color: rgb(255, 255, 255);
-        font-family: "Oxanium", sans-serif;
-        font-weight: 50;
-        font-style: normal;
-        text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-        text-align: justify;
-        padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-     
-    
-}
 
-.container {
-    width: 500px;
-    height: 550px;
-    border-radius: 20px;
-    background-color: rgba(20, 20, 20, 0.267); 
- }
- 
-.forms input{
-    width: 400px;
-    
-}
-
-h1{
-    font-size: 40px;
-    margin-bottom: 0%;
-    color: rgb(255, 255, 255);
-    font-family: "Oxanium", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-    text-align: center;
-    padding-top: 40px;
-   
-}
-.botao{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-      
-}
-.botao button{
-    width: 250px;
-    align-items: center;
-}
-
-.cadastrar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.cadastrar label{
-    color:  rgb(255, 255, 255);
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-  
-    
-}
-.a-cadastrar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: -10px;
+@media only screen and (max-width: 1080px) {
+    .footer{
+        height: 0px;
+    }
 }

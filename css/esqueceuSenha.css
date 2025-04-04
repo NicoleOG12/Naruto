@@ -1,7 +1,7 @@
 * {
     margin: auto;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;   
 }
 
 body {
@@ -11,48 +11,32 @@ body {
     rgba(255,115,6,1) 100%);
 }
 
-header {
+header{
     display: flex;
     background-color: #00000022;
     color: antiquewhite;
     padding-left: 3%;
+    margin: 0px 0px;
     margin-bottom: 3%;
 }
 
-.profile-name {
-    display: flex;
-    gap: 20%;
-    margin: 10px;
-    align-items: center;
-}
-
-.profile {
-    width: 200px; 
-    height: 100px;
-    padding: auto;
-    margin: 0;
-}
-
-header nav {
+header nav{
     display: flex;
     width: 10%;
     gap: 45%;
     flex-direction: row;
 }
 
-.a-nav {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+a{
+    color: antiquewhite;
     transition: 0.5s;
-}
-
-.a-nav:hover {
-    color: #ffa048;
-    text-decoration: none;
-    background-color: #007ce2;
-    border-radius: 20px;
-    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
 }
 
 .a-nav .car i{
@@ -96,13 +80,31 @@ header nav {
     margin: 0;
 }
 
-a {
-    color: antiquewhite;
-    font-weight: 500;
-    font-size: 18px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
-    text-decoration: underline;
-    transition: 0.5s;
+a:hover{
+    color: #ffa048;
+    text-decoration: none;
+}
+
+.a-nav:hover{
+    color: #ffa048;
+    text-decoration: none;
+    background-color: #007ce2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.profile{
+    width: 200px; 
+    height: 100px;
+    padding: auto;
+    margin: 0;
+}
+
+.profile-name{
+    display: flex;
+    gap: 20%;
+    margin: 10px;
+    align-items: center;
 }
 
 .container {
@@ -232,4 +234,11 @@ footer p {
     margin-top: 10px;
     text-align: center;
     width: 100%;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .footer{
+        height: 0px;
+    }
 }
