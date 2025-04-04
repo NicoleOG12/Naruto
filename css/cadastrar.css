@@ -110,12 +110,25 @@ a:hover{
     height: 600px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267); 
- } 
- 
+} 
+
+h1{
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: center;
+    padding-top: 40px;
+}
+
  .forms{ 
     font-size: 18px;
     margin-bottom: 0%;
     color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
     font-weight: 50;
     font-style: normal;
     text-align: justify;
@@ -124,13 +137,22 @@ a:hover{
     padding-right: 40px;
 }
 
+.forms label {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 400; 
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
+}
+  
 .forms input{
     width: 400px;
 }
 
+
 .botao {
-    text-align: center;
-    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .botao a {
@@ -150,35 +172,26 @@ a:hover{
     transform: scale(1.05);
 }
 
-
-h1{
-    font-size: 40px;
-    margin-bottom: 0%;
-    color: rgb(255, 255, 255);
-    font-family: "Oxanium", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+.botao .btn {
+    width: 250px;
+    padding: 10px;
     text-align: center;
-    padding-top: 40px;
-   
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.container p{
-    font-size: 22px;
-    margin-bottom: 0%;
-    color: rgb(255, 255, 255);
-    font-family: "Oxanium", sans-serif;
-    font-weight: 50;
-    font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-    text-align: justify;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+.botao .btn:hover {
+    background-color: #0056b3;
 }
 
- footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
