@@ -89,17 +89,29 @@ a{
     border-radius: 20px;
     padding: 10px;
 }
+
 .container .form button{
     background-color: #007ce2
 }
-.button:hover{
-    color: #ffa048;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #007ce2;
 
+.botao a {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #007ce2;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
+
+.botao a:hover {
+    color: #ffa048;
+    background-color: #005fb3;
+    transform: scale(1.05);
+}
+
+
 /*Ajustar tamnho da logo*/
 .profile {
     width: 200px; 

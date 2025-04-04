@@ -106,11 +106,12 @@ a:hover{
 }
 
 .container {
-    width: 500px;
-    height: 550px;
+    width: 550px;
+    height: 600px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267); 
  } 
+ 
  .forms{ 
     font-size: 18px;
     margin-bottom: 0%;
@@ -122,12 +123,34 @@ a:hover{
     padding-left: 40px;
     padding-right: 40px;
 }
+
 .forms input{
     width: 400px;
 }
-.button{
+
+.botao {
     text-align: center;
+    margin-top: 20px; 
 }
+
+.botao a {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: #007ce2;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.botao a:hover {
+    color: #ffa048;
+    background-color: #005fb3;
+    transform: scale(1.05);
+}
+
+
 h1{
     font-size: 40px;
     margin-bottom: 0%;
