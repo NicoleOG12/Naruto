@@ -112,6 +112,18 @@ a {
     background-color: rgba(20, 20, 20, 0.267); 
 }
 
+h1 {
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+    font-family: "Oxanium", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-align: center;
+    padding-top: 40px;
+}
+
 .forms {
     font-size: 22px;
     margin-bottom: 0%;
@@ -142,18 +154,6 @@ a {
 
 .container .form button:hover {
     background-color: #005fb3;
-}
-
-h1 {
-    font-size: 40px;
-    margin-bottom: 0%;
-    color: rgb(255, 255, 255);
-    font-family: "Oxanium", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-    text-align: center;
-    padding-top: 40px;
 }
 
 .botao {
