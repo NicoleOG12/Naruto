@@ -1,9 +1,11 @@
+/* Estilos globais*/
 * {
-    margin: auto;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: auto; /* Centraliza na horizontal */
+    padding: 0; /* Remove o preenchimento interno*/
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
+/* Degradê horizontal */
 body {
     background: linear-gradient(90deg, 
     rgba(255,95,0,1) 0%, 
@@ -12,44 +14,48 @@ body {
 }
 
 header {
-    display: flex;
-    background-color: #00000022;
-    color: antiquewhite;
-    padding-left: 3%;
+    display: flex; /* Organiza os itens em linha */
+    background-color: #00000022; 
+    color: antiquewhite; 
+    padding-left: 3%; 
+    margin: 0px 0px;
     margin-bottom: 3%;
 }
 
-header nav{
+/* Navegação dentro do header */
+header nav {
     display: flex;
     width: 10%;
-    gap: 45%;
+    gap: 45%; /* Espaço entre os itens */
     flex-direction: row;
 }
 
-a{
+/* Estilo dos links */
+a {
     color: antiquewhite;
-    transition: 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s; /* Transições suaves */
     font-weight: normal;
     position: relative;
-    font-weight: 500;
     font-size: 18px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
-    text-decoration: underline;
+    text-decoration: underline; /* Linha abaixo do texto */
 }
 
-.a-nav .car i{
+/* Ícone de Carrinho */
+.a-nav .car i {
     font-size: 30px;
     color: #ffffff;  
-    padding-top: 5px;  
+    padding-top: 5px;
 }
 
+/* Container geral para os itens da navegação */
 .a-nav {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
+/* Estilizar nav do icone de login*/
 .a-nav .user {
     display: flex;
     align-items: center;
@@ -57,6 +63,7 @@ a{
     margin-left: 120px;
 }
 
+/* Estiliza o nome Login*/
 .a-nav .userp {
     font-size: 20px;
     color: #ffffff;
@@ -65,26 +72,26 @@ a{
     align-items: center;
 }
 
+/* Remove margens do parágrafo do login*/
 .a-nav .userp p {
     margin: 0;
 }
 
+/* Ícone do Login */
 .a-nav .user i {
     font-size: 50px;
     color: #ffffff;
     padding-left: 0;
 }
 
-.a-nav .userp p {
-    margin: 0;
-}
-
-a:hover{
+/* Efeito ao passar o mouse sobre links */
+a:hover {
     color: #ffa048;
     text-decoration: none;
 }
 
-.a-nav:hover{
+/* Efeito hover para o bloco de navegação */
+.a-nav:hover {
     color: #ffa048;
     text-decoration: none;
     background-color: #007ce2;
@@ -93,7 +100,7 @@ a:hover{
 }
 
 .profile {
-    width: 200px; 
+    width: 200px;
     height: 100px;
     padding: auto;
     margin: 0;
@@ -106,53 +113,58 @@ a:hover{
     align-items: center;
 }
 
+/* Tabelas com conteúdo centralizado verticalmente */
 .table td, .table th {
     vertical-align: middle;
 }
 
+/* Cabeçalho da tabela */
 .table th {
     background-color: #00a2ec;
     color: #212529;
 }
 
+/* Inputs dentro da tabela */
 .table input {
     width: 60px;
     text-align: center;
 }
 
+/* Botão de remover */
 .btn-danger {
     background-color: #dc3545;
     color: white;
     border: none;
 }
 
+/* Botão de comprar*/
 .btn-primary {
-    background-color: #F072AC;
+    background-color: #F072AC; 
     color: white;
     border: none;
 }
 
-h2{
+h2 {
     font-size: 40px;
     margin-bottom: 0%;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: "Oxanium", sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.total{
+.total {
     font-size: 40px;
     margin-bottom: 0%;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: "Oxanium", sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
+    text-shadow: 1px 1px 8px rgba(194, 87, 0, 0.712);
     text-align: right;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -193,14 +205,16 @@ footer p {
     width: 100%;
 }
 
+/* Estilo responsivo para telas até 768px */
 @media only screen and (max-width: 768px) {
     .container {
         padding: 0 10px;
     }
 }
 
+/* Para telas até 1080px*/
 @media only screen and (max-width: 1080px) {
-    .footer{
+    .footer {
         height: 0px;
     }
 }
