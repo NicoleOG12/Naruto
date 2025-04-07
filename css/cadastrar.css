@@ -115,7 +115,7 @@ a:hover {
 
 .container {
     width: 550px;
-    height: 600px;
+    height: 550px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267);
 } 
@@ -140,7 +140,7 @@ h1 {
     font-weight: 50;
     font-style: normal;
     text-align: justify;
-    padding: 10px 40px 0 40px;
+    padding: 10px 50px 0 50px;
 }
 
 .forms label {
@@ -157,12 +157,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .botao a {
     font-size: 20px;
-    padding: 15px 30px;
+    padding: 55px 30px;
     border-radius: 20px;
     background-color: #007ce2;
     color: #fff;
