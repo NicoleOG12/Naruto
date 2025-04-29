@@ -1,5 +1,3 @@
-console.log('Olá JS')
-
 function get_name() {
     let n = document.querySelector("#nome").value
     console.log('Seu nome é: ')
@@ -19,7 +17,6 @@ function login() {
     for(let i=0; i < dados.length; i++){
         if(lg == dados[i].email && sn == dados[i].senha) {
             alert("Login feito com sucesso!")
-            alert("Seu nome é:" + dados[i].nome + "\n Email:" + dados[i].email)
         }
     }
 }
