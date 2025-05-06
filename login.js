@@ -22,13 +22,13 @@ function logar() {
 
     for (let i=0; i<ds.length; i++) {
         if(lg == ds[i].login && sn == ds[i].senha) {
-            console.log('Seu login é: ' + ds[i].login + "\n Seu nome é: " + ds[i].nome)
-            alert('Logou!')
+            // console.log('Seu login é: ' + ds[i].login + "\n Seu nome é: " + ds[i].nome)
+            alert('Bem-vindo: '+ ds[i].nome)
 
             sessionStorage.setItem('user', ds[i].nome)
             sessionStorage.setItem('email', ds[i].email)
 
-            alert(ds)
+            // alert(ds)
 
             // redirecionar página
             window.location.href = 'sobre.html'
