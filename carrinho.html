@@ -44,13 +44,31 @@
         </tr>
       </thead>
       <tbody id="carrinho-body">
-        <!-- Produtos carregados via JS -->
+        
       </tbody>
     </table>
 
     <div class="total">
       <h3 id="total-geral">Total: R$ 0,00</h3>
       <button class="btn btn-primary">Finalizar Compra</button>
+    </div>
+
+    <div class="modal fade" id="modalPagamento" tabindex="-1" role="dialog" aria-labelledby="modalPagamentoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalPagamentoLabel">Escolha a forma de pagamento</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <button class="btn btn-success" id="pagamentoPix">Pix</button>
+            <button class="btn btn-info" id="pagamentoCartao">Cartão de Crédito</button>
+            <button class="btn btn-warning" id="pagamentoBoleto">Boleto</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 

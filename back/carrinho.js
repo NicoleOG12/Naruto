@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const chaveCarrinho = `carrinho-${usuario}`;  
   const tbody = document.getElementById("carrinho-body");
   const totalElement = document.getElementById("total-geral");
+  const finalizarCompraBtn = document.querySelector(".btn.btn-primary");
 
   function formatarPreco(valor) {
     return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -54,6 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     atualizarTotal();
+  }
+
+  if (finalizarCompraBtn) {
+    finalizarCompraBtn.addEventListener("click", () => {
+      $('#modalPagamento').modal('show');
+    });
   }
 
   tbody.addEventListener("input", (e) => {
