@@ -80,4 +80,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   carregarCarrinho();
+
+  const botaoPix = document.getElementById("pagamentoPix");
+  const botaoCartao = document.getElementById("pagamentoCartao");
+  const botaoBoleto = document.getElementById("pagamentoBoleto");
+  const mensagemSucesso = document.getElementById("mensagem-sucesso");
+
+  function exibirModalSucesso(metodo) {
+    const nomeUsuario = localStorage.getItem("usuarioLogado") || "Usuário";  // Usando nome simples
+    const totalTexto = totalElement.textContent;
+    $('#modalPagamento').modal('hide');
+
+    mensagemSucesso.innerHTML = `
+      <p><strong>Nome:</strong> ${nomeUsuario}</p>
+      <p><strong>Forma de Pagamento:</strong> ${metodo}</p>
+      <p><strong>${totalTexto}</strong></p>
+      <p class="mt-3">Obrigado pela sua compra! 💛</p>
+    `;
+
+    $('#modalSucesso').modal('show');
+
+    // Limpa o carrinho
+    localStorage.removeItem(chaveCarrinho);
+    setTimeout(() => {
+      carregarCarrinho();
+    }, 500);
+  }
+
+  botaoPix.addEventListener("click", () => exibirModalSucesso("Pix"));
+  botaoCartao.addEventListener("click", () => exibirModalSucesso("Cartão de Crédito"));
+  botaoBoleto.addEventListener("click", () => exibirModalSucesso("Boleto"));
 });

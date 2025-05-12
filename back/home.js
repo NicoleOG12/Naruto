@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const produto = { nome, preco };
 
       let carrinho = JSON.parse(localStorage.getItem(chaveCarrinho)) || [];
-ho
+
       carrinho.push(produto);
 
       localStorage.setItem(chaveCarrinho, JSON.stringify(carrinho));
