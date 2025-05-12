@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const usuario = localStorage.getItem("usuarioLogado");
+
+  if (!usuario) {
+    alert("Você precisa estar logado para acessar o carrinho.");
+    return;
+  }
+
+  const chaveCarrinho = `carrinho-${usuario}`;  
   const tbody = document.getElementById("carrinho-body");
   const totalElement = document.getElementById("total-geral");
 
@@ -23,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function carregarCarrinho() {
+    const carrinho = JSON.parse(localStorage.getItem(chaveCarrinho)) || [];
     tbody.innerHTML = "";
 
     carrinho.forEach((produto, index) => {
@@ -57,8 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
   tbody.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-remover")) {
       const index = parseInt(e.target.dataset.index);
+      let carrinho = JSON.parse(localStorage.getItem(chaveCarrinho)) || [];
       carrinho.splice(index, 1);
-      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      localStorage.setItem(chaveCarrinho, JSON.stringify(carrinho));
       carregarCarrinho();
     }
   });
