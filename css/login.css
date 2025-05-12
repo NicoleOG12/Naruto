@@ -152,7 +152,7 @@ h1 {
     padding-top: 10px;
 }
 
-.botao a {
+.botao button {
     font-size: 20px;
     padding: 15px 30px;
     border-radius: 20px;
@@ -163,7 +163,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.botao a:hover {
+.botao button:hover {
     color: #ffa048;
     background-color: #005fb3;
     transform: scale(1.05);
