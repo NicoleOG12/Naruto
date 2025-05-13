@@ -19,6 +19,8 @@ function logar() {
         if(lg == ds[i].email && sn == ds[i].senha) {
             alert('Bem-vindo: '+ ds[i].nome)
 
+            sessionStorage.setItem("user", ds[i].nome)
+
            localStorage.setItem('usuarioLogado', JSON.stringify(ds[i]));
             window.location.href = 'home.html'; 
             return;
