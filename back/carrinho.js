@@ -6,6 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  const nomeUsuarioElement = document.getElementById("nome-usuario");
+  const usuarioLink = document.getElementById("usuario-link");
+
+  if (usuario) {
+    nomeUsuarioElement.textContent = usuario.nome;
+    usuarioLink.setAttribute("href", "./perfil.html");
+  } else {
+    nomeUsuarioElement.textContent = "Login";
+    usuarioLink.setAttribute("href", "./login.html");
+  }
+
   const chaveCarrinho = `carrinho-${usuario.nome}`;
   const tbody = document.getElementById("carrinho-body");
   const totalElement = document.getElementById("total-geral");
@@ -88,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function exibirModalSucesso(metodo) {
     const nomeUsuario = usuario.nome || "Usuário"; 
-
     const totalTexto = totalElement.textContent;
     $('#modalPagamento').modal('hide');
 
@@ -96,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <p><strong>Nome:</strong> ${nomeUsuario}</p>
       <p><strong>Forma de Pagamento:</strong> ${metodo}</p>
       <p><strong>${totalTexto}</strong></p>
-      <p class="mt-3">Obrigado pela sua compra! 💛</p>
+      <p class="mt-3">Obrigado pela sua compra! 🧡💛</p>
     `;
 
     $('#modalSucesso').modal('show');

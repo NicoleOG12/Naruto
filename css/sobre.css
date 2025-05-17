@@ -23,7 +23,7 @@ header{
 header nav{
     display: flex;
     width: 10%;
-    gap: 45%;
+    gap: 55%;
     flex-direction: row;
 }
 
