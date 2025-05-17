@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const usuario = localStorage.getItem("usuarioLogado");
 
+ 
+
   if (!usuario) {
     alert("Você precisa estar logado para acessar o carrinho.");
     return;
   }
 
-  const chaveCarrinho = `carrinho-${usuario}`;  
+  const chaveCarrinho = `carrinho-${usuario.nome}`;  
   const tbody = document.getElementById("carrinho-body");
   const totalElement = document.getElementById("total-geral");
   const finalizarCompraBtn = document.querySelector(".btn.btn-primary");
@@ -80,14 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   carregarCarrinho();
-
   const botaoPix = document.getElementById("pagamentoPix");
   const botaoCartao = document.getElementById("pagamentoCartao");
   const botaoBoleto = document.getElementById("pagamentoBoleto");
   const mensagemSucesso = document.getElementById("mensagem-sucesso");
 
   function exibirModalSucesso(metodo) {
-    const nomeUsuario = localStorage.getItem("usuarioLogado") || "Usuário";  // Usando nome simples
+    const nomeUsuario = sessionStorage.getItem("user") || "Usuário";
+
     const totalTexto = totalElement.textContent;
     $('#modalPagamento').modal('hide');
 

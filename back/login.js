@@ -2,7 +2,7 @@ function dados() {
     const ds = [
         {id: 1, login: "nicole", senha: "1234", nome: "Nicole", email: "nicole@gmail.com"},
         {id: 2, login: "julia", senha: "12345", nome: "Julia", email: "julia@gmail.com"},
-        {id: 3, login: "isabella", senha: "123456", nome: "Isabella", email: "isabella@gmail.com"},
+        {id: 3, login: "isabela", senha: "123456", nome: "Isabela", email: "isabela@gmail.com"},
         {id: 3, login: "ana", senha: "1234567", nome: "Ana", email: "ana@gmail.com"}
     ]
     let json = JSON.stringify(ds)
