@@ -1,21 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
   const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
-  
+
   if (!usuario) {
     alert("Você precisa estar logado para acessar o carrinho.");
+    window.location.href = "login.html";
     return;
   }
 
   const nomeUsuarioElement = document.getElementById("nome-usuario");
   const usuarioLink = document.getElementById("usuario-link");
+  const profileModal = document.getElementById("profileModal");
+  const closeModalBtn = document.getElementById("closeModalBtn");
+  const logoutBtn = document.getElementById("logoutBtn");
+  const deleteAccountBtn = document.getElementById("deleteAccountBtn");
 
-  if (usuario) {
-    nomeUsuarioElement.textContent = usuario.nome;
-    usuarioLink.setAttribute("href", "./perfil.html");
-  } else {
-    nomeUsuarioElement.textContent = "Login";
-    usuarioLink.setAttribute("href", "./login.html");
-  }
+  nomeUsuarioElement.textContent = usuario.nome;
+  usuarioLink.setAttribute("href", "perfil.html");
+
+  usuarioLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("usuario-nome").textContent = usuario.nome;
+    document.getElementById("usuario-email").textContent = usuario.email;
+    $(profileModal).modal('show');
+  });
+
+  closeModalBtn.addEventListener("click", () => {
+    $(profileModal).modal('hide');
+  });
+
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("usuarioLogado");
+    alert("Você foi desconectado.");
+    window.location.href = "login.html";
+  });
+
+  deleteAccountBtn.addEventListener("click", () => {
+    const confirma = confirm("Tem certeza que deseja excluir sua conta?");
+    if (confirma) {
+      localStorage.removeItem("usuarioLogado");
+      alert("Conta excluída.");
+      window.location.href = "login.html";
+    }
+  });
 
   const chaveCarrinho = `carrinho-${usuario.nome}`;
   const tbody = document.getElementById("carrinho-body");

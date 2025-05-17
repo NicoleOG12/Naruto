@@ -12,9 +12,9 @@
 </head>
 
 <body>
-        <header>
+    <header>
         <div class="profile-name">
-        <img src="img/Adobe Express - file.png" alt="" class="profile">
+            <img src="img/Adobe Express - file.png" alt="" class="profile">
         </div>
         <nav>
             <a class="a-nav" href="./home.html">Home</a>
@@ -24,7 +24,7 @@
                     <i class="fa-solid fa-cart-shopping"></i> 
                 </div>
             </a>
-
+        
             <a class="a-nav" href="./login.html" id="usuario-link">
                <div class="user">
                    <div class="userp">
@@ -35,6 +35,31 @@
             </a>
         </nav>
     </header>
+
+     <div id="profileModal" class="modalPerfil" tabindex="-1" role="dialog">
+        <div class="modalPerfil-dialog" role="document">
+            <div class="modalPerfil-content">
+                <div class="modalPerfil-header">
+                    <h5 class="modalPerfil-title">Meu Perfil</h5>
+                    <button type="button" id="closeModalBtn" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modalPerfil-body">
+                    <i class="fas fa-user"></i>
+                    <br>
+                    <h4 id="usuario-nome"></h4>
+                    <p id="usuario-email"></p>
+                </div>
+                <div class="modalPerfil-footer">
+                    <button id="logoutBtn" class="btn-logout">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                    <button id="deleteAccountBtn" class="btn-delete">Excluir Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <img src="img/naruto-running-pixel-animated-custom-cursor.gif" alt="" style="display: flex; justify-content: center; width: 12%; margin-top: 4%;">
     <div class="container">

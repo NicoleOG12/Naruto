@@ -113,6 +113,114 @@ a:hover {
     align-items: center;
 }
 
+.modalPerfil {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 300px;
+    background: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0;
+}
+
+.modalPerfil.show {
+    transform: translateX(0);
+}
+
+.modalPerfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    background-color: #007ce2;
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+}
+
+.modalPerfil-header .close-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modalPerfil-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.modalPerfil-body i {
+    background-color: #ffffff;
+    border: 2px solid #00a2ec; 
+    border-radius: 50%; 
+    padding: 15px; 
+    font-size: 30px; 
+    color: #000000; 
+    display: inline-block;
+}
+
+.modalPerfil-body .user-info {
+    margin-bottom: 20px;
+}
+
+.modalPerfil-body h4 {
+    font-size: 24px;
+    margin-bottom: -5px;
+    margin-top: 20px;
+}
+
+.modalPerfil-body p {
+    font-size: 16px;
+    color: gray;
+}
+
+.modalPerfil-footer {
+    margin-top: -40px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-logout, .btn-delete {
+    width: 45%;
+    padding: 5px;
+    border-radius: 15px;
+    border: #00000022;
+}
+
+.btn-logout {
+    background-color: #F072AC;
+    color: white;
+    align-items: center;
+}
+
+.btn-logout i {
+    transform: rotate(180deg); 
+     font-size: 20px;
+}
+
+.btn-logout:hover {
+    background-color: #c03777;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #ad1f15;
+}
+
 /* Tabelas com conteúdo centralizado verticalmente */
 .table td, .table th {
     vertical-align: middle;

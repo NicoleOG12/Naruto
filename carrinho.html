@@ -36,6 +36,31 @@
         </nav>
     </header>
 
+    <div id="profileModal" class="modalPerfil" tabindex="-1" role="dialog">
+        <div class="modalPerfil-dialog" role="document">
+            <div class="modalPerfil-content">
+                <div class="modalPerfil-header">
+                    <h5 class="modalPerfil-title">Meu Perfil</h5>
+                    <button type="button" id="closeModalBtn" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modalPerfil-body">
+                    <i class="fas fa-user"></i>
+                    <br>
+                    <h4 id="usuario-nome"></h4>
+                    <p id="usuario-email"></p>
+                </div>
+                <div class="modalPerfil-footer">
+                    <button id="logoutBtn" class="btn-logout">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                    <button id="deleteAccountBtn" class="btn-delete">Excluir Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <main class="container mt-5">
     <h2>Carrinho de Compras</h2>
     <table class="table table-bordered">
