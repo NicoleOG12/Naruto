@@ -109,7 +109,7 @@ a:hover{
 
 .container {
     width: 500px;
-    height: 450px;
+    height: 500px;
     border-radius: 20px;
     background-color: rgba(20, 20, 20, 0.267); 
 }
@@ -135,7 +135,7 @@ h1 {
     font-style: normal;
     text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
     text-align: justify;
-    padding: 40px;
+    padding: 25px;
     padding-bottom: 0;
 }
 

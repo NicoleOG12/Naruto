@@ -53,3 +53,42 @@ function logado() {
     // preenche o campo de entrada com o nome do usuário
     document.querySelector('#usuario').value = usuario
 }
+
+// função para redefinir a senha
+function redefinirSenha(event) {
+    event.preventDefault();  // Evita o envio do formulário (recarregar a página)
+
+    // pega os dados inseridos pelo usuário
+    let email = document.querySelector('#emailRedefinir').value;
+    let novaSenha = document.querySelector('#RedefinirSenha').value;
+    let confirmarSenha = document.querySelector('#ConfirmarSenha').value;
+
+    // Verifica se as senhas são iguais
+    if (novaSenha !== confirmarSenha) {
+        alert('As senhas não coincidem. Por favor, tente novamente.');
+        return;
+    }
+
+    // carrega o banco de usuários
+    const ds = JSON.parse(localStorage.getItem('banco'));
+
+    // busca o usuário pelo email
+    let usuarioEncontrado = ds.find(user => user.email === email);
+
+    if (usuarioEncontrado) {
+        // atualiza a senha do usuário 
+        usuarioEncontrado.senha = novaSenha;
+
+        // salva as alterações no localStorage
+        localStorage.setItem('banco', JSON.stringify(ds));
+
+        alert('Senha redefinida com sucesso!');
+        window.location.href = 'login.html';
+    } else {
+        alert('Email não encontrado.');
+    }
+}
+
+// chama a função que inicializa o banco de usuários 
+dados();
+
