@@ -19,9 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   usuarioLink.addEventListener("click", (e) => {
     e.preventDefault();
-    document.getElementById("usuario-nome").textContent = usuario.nome;
-    document.getElementById("usuario-email").textContent = usuario.email;
-    $(profileModal).modal('show');
+    if (usuario) {  
+      document.getElementById("usuario-nome").textContent = usuario.nome;
+      document.getElementById("usuario-email").textContent = usuario.email;
+      $(profileModal).modal('show');
+    }
   });
 
   closeModalBtn.addEventListener("click", () => {
