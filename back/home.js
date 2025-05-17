@@ -17,9 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       usuarioLink.addEventListener("click", (e) => {
         e.preventDefault();
-        document.getElementById("usuario-nome").textContent = usuarioLogado.nome;
-        document.getElementById("usuario-email").textContent = usuarioLogado.email;
-        $(profileModal).modal('show');
+        if (usuarioLogado) {
+          document.getElementById("usuario-nome").textContent = usuarioLogado.nome;
+          document.getElementById("usuario-email").textContent = usuarioLogado.email;
+          $(profileModal).modal('show');
+        }
       });
     } else {
       alert("Usuário não encontrado no banco de dados.");
@@ -35,7 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   logoutBtn.addEventListener("click", () => {
     sessionStorage.removeItem("user");
+    localStorage.removeItem("usuarioLogado");
+
     alert("Você foi desconectado.");
+    nomeUsuarioElement.textContent = "Login";
+    usuarioLink.setAttribute("href", "login.html");
+
     window.location.href = "login.html";
   });
 
@@ -43,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const confirma = confirm("Tem certeza que deseja excluir sua conta?");
     if (confirma) {
       sessionStorage.removeItem("user");
+      localStorage.removeItem("usuarioLogado");
 
       const usuarioIndex = banco.findIndex(u => u.nome === usuario);
       if (usuarioIndex !== -1) {
@@ -51,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       alert("Conta excluída.");
+      nomeUsuarioElement.textContent = "Login";
+      usuarioLink.setAttribute("href", "login.html");
+
       window.location.href = "login.html";
     }
   });

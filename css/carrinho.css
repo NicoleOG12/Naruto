@@ -279,31 +279,32 @@ h2 {
 }
 
 .modal-dialog {
-    max-width: 700px;
+    max-width: 500px;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .modal-content {
-  background-color: #00a2ec;
-  border-radius: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.151);
+    background-color: #00a2ec;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.151);
 }
 
 .modal-header {
-  background-color: #00a2ec;
-  color: #fff;
-  border-bottom: 2px solid #0056b3;
-   display: flex;
-  justify-content: space-between;
-  align-items: center;
+    max-width: 700px; 
+    background-color: #00a2ec;
+    color: #fff;
+    border-bottom: 2px solid #0056b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .modal-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  font-family: "Oxanium", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Oxanium", sans-serif;
 }
 
 .close {

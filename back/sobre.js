@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+    const loginLink = document.querySelector("#usuario-link");
 
     if (usuario) {
         const nomeUsuario = usuario.nome || "Usuário";
-        const loginLink = document.querySelector("#usuario-link");
 
         loginLink.innerHTML = `
             <div class="user">
@@ -27,8 +27,24 @@ document.addEventListener("DOMContentLoaded", () => {
         closeModalBtn.addEventListener("click", () => {
             $(profileModal).modal('hide');
         });
+
+        const logoutBtn = document.getElementById("logoutBtn");
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("usuarioLogado");
+            alert("Você foi desconectado.");
+            window.location.href = "login.html";
+        });
+
+        const deleteAccountBtn = document.getElementById("deleteAccountBtn");
+        deleteAccountBtn.addEventListener("click", () => {
+            const confirma = confirm("Tem certeza que deseja excluir sua conta?");
+            if (confirma) {
+                localStorage.removeItem("usuarioLogado");
+                alert("Conta excluída.");
+                window.location.href = "login.html";
+            }
+        });
     } else {
-        const loginLink = document.querySelector("#usuario-link");
         loginLink.innerHTML = `
             <div class="user">
                 <div class="userp">

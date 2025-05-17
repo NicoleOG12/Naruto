@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!usuario) {
     alert("Você precisa estar logado para acessar o carrinho.");
-    window.location.href = "login.html";
     return;
   }
 
@@ -32,15 +31,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   logoutBtn.addEventListener("click", () => {
     localStorage.removeItem("usuarioLogado");
+    sessionStorage.removeItem("usuarioLogado");
+    
     alert("Você foi desconectado.");
+    nomeUsuarioElement.textContent = "Login";  
+    usuarioLink.setAttribute("href", "login.html");  
     window.location.href = "login.html";
   });
 
   deleteAccountBtn.addEventListener("click", () => {
     const confirma = confirm("Tem certeza que deseja excluir sua conta?");
     if (confirma) {
+
       localStorage.removeItem("usuarioLogado");
+      sessionStorage.removeItem("usuarioLogado");
+
       alert("Conta excluída.");
+      nomeUsuarioElement.textContent = "Login";  
+      usuarioLink.setAttribute("href", "login.html");  
       window.location.href = "login.html";
     }
   });
