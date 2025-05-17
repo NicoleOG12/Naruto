@@ -160,7 +160,7 @@ h1 {
     padding-top: 0px;
 }
 
-.botao a {
+.botao button {
     font-size: 20px;
     padding: 55px 30px;
     border-radius: 20px;
@@ -172,7 +172,7 @@ h1 {
 }
 
 /* Efeito hover no botão */
-.botao a:hover {
+.botao button:hover {
     color: #ffa048;
     background-color: #005fb3;
     transform: scale(1.05);
