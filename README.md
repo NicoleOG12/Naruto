@@ -1,6 +1,6 @@
 <!--
   ___________________________________________________________________
-   <p align="center">🧡💛 Naruto Pop 💛🧡</p>
+  🧡💛 Naruto Pop 💛🧡
   —————————————————————————————————————————————————————————————————————————————————
    O lugar perfeito para colecionadores e fãs de Naruto!
   ___________________________________________________________________
@@ -9,7 +9,7 @@
 # 🧡💛 Naruto Pop 💛🧡
 
 <p align="center">
-  <img src="https://narutopop.vercel.app/img/Adobe%20Express%20-%20file.png" alt="Naruto Pop Banner" />
+  <img src="https://narutopop.vercel.app/img/Adobe%20Express%20-%20file.png" alt="Naruto Pop Banner"  height="50" />
 </p>
 
 ---
