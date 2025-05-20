@@ -1,13 +1,42 @@
-🧡💛Naruto Pop💛🧡
+<!--
+  ___________________________________________________________________
+   🧡💛 Naruto Pop 💛🧡
+  —————————————————————————————————————————————————————————————————————————————————
+   O lugar perfeito para colecionadores e fãs de Naruto!
+  ___________________________________________________________________
+-->
 
-Bem-vindo à nossa loja, o lugar perfeito para os fãs de Naruto! Aqui, você encontra uma seleção incrível de Funko Pops exclusivos e colecionáveis, trazendo seus personagens favoritos à vida. De Naruto Uzumaki a Sasuke Uchiha, temos figuras que vão fazer você reviver os melhores momentos do anime.
+# 🧡💛 Naruto Pop 💛🧡
 
-Conquiste sua coleção e mostre seu amor pelo mundo ninja com nossos Pops de alta qualidade. Desperte o shinobi que há em você!
+<p align="center">
+  <img src="https://via.placeholder.com/728x200?text=Naruto+Pop+Banner" alt="Naruto Pop Banner" />
+</p>
 
-*MEMBRAS DO GRUPO:*
-Ana luiza Viçosi Dourado
-Isabella Apolinario dos Santos 
-Júlia Lins Pereira da Silva 
-Nicole Oliveira Gonçalves
+---
 
-*Professor:* Bruno Zolotareff dos Santos
+## 📖 Descrição
+
+Bem-vindo à **Naruto Pop**, o lugar definitivo para os fãs de **Naruto**!  
+Aqui você encontra uma seleção incrível de **Funko Pops** exclusivos e colecionáveis, trazendo seus personagens favoritos à vida.  
+De **Naruto Uzumaki** a **Sasuke Uchiha**, reviva os momentos mais épicos do anime em sua prateleira!
+
+---
+## ✨ Features
+
+- 🌀 Funko Pops **exclusivos** de todos os personagens principais  
+- 🌀 Alta **qualidade** e detalhamento  
+- 🌀 **Colecionáveis** originais e **edições limitadas**  
+- 🌀 **Embalagem** segura para sua coleção  
+
+---
+## 👩‍🎓 Nomes
+
+- Ana luiza Viçosi Dourado 
+- Isabella Apolinario dos Santos 
+- Júlia Lins Pereira da Silva 
+- Nicole Oliveira Gonçalves
+
+## 👨‍🏫 Professor
+
+- Bruno Zolotareff dos Santos
+
