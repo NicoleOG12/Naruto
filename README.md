@@ -9,7 +9,7 @@
 # 🧡💛 Naruto Pop 💛🧡
 
 <p align="center">
-  <img src="https://via.placeholder.com/728x200?text=Naruto+Pop+Banner" alt="Naruto Pop Banner" />
+  <img src="https://narutopop.vercel.app/img/Adobe%20Express%20-%20file.png" alt="Naruto Pop Banner" />
 </p>
 
 ---
