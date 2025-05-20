@@ -6,7 +6,7 @@
   ___________________________________________________________________
 -->
 
-<p align="center"> # 🧡💛 Naruto Pop 💛🧡</p>
+# 🧡💛 Naruto Pop 💛🧡
 
 <p align="center">
   <img src="https://narutopop.vercel.app/img/Adobe%20Express%20-%20file.png" alt="Naruto Pop Banner"  height="100" />
