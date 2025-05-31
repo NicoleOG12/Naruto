@@ -39,8 +39,14 @@ function logar() {
             localStorage.setItem('usuarioLogado', JSON.stringify(ds[i]));
 
             // redireciona o usuário para a página inicial (home.html)
-            window.location.href = 'home.html'; 
+            // Verifica se o ID do usuário é 1, 2, 3 ou 4
+            if ([1, 2, 3, 4].includes(ds[i].id)) {
+                window.location.href = 'adimin.html'; // redireciona para admin
+            } else {
+                window.location.href = 'home.html'; // redireciona para usuário comum
+            }
             return;
+
         }
     }
     alert('Usuário ou senha inválidos.');

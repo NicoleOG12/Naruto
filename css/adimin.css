@@ -1,0 +1,269 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+body {
+    background: linear-gradient(90deg, 
+    rgba(255,95,0,1) 0%, 
+    rgba(255,248,0,1) 49%, 
+    rgba(255,115,6,1) 100%);
+}
+
+header{
+    display: flex;
+    background-color: #00000022;
+    color: antiquewhite;
+    padding-left: 3%;
+    margin: 0px 0px;
+    margin-bottom: 3%;
+}
+
+header nav{
+    display: flex;
+    width: 10%;
+    gap: 45%;
+    flex-direction: row;
+}
+
+a{
+    color: antiquewhite;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
+}
+
+.a-nav .car i{
+    font-size: 30px;
+    color: #ffffff;  
+    padding-top: 5px;  
+}
+
+.a-nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.a-nav .user {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 120px;
+}
+
+.a-nav .userp {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.a-nav .userp p {
+    margin: 0;
+}
+
+.a-nav .user i {
+    font-size: 50px;
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.a-nav .userp p {
+    margin: 0;
+}
+
+a:hover{
+    color: #ffa048;
+    text-decoration: none;
+}
+
+.a-nav:hover{
+    color: #ffa048;
+    text-decoration: none;
+    background-color: #007ce2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.profile{
+    width: 200px; 
+    height: 100px;
+    padding: auto;
+    margin: 0;
+}
+
+.profile-name{
+    display: flex;
+    gap: 20%;
+    margin: 10px;
+    align-items: center;
+}
+.container {
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    background-color: transparent; 
+    padding: 30px 0;
+    margin-top: 20px;
+}
+/* TÍTULO */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+.titulo-cadastrar {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px #c25700b6;
+}
+
+.input-cadastrar,
+.buscar-produto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.input-cadastrar input,
+.buscar-produto input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    margin: 10px 0;
+}
+
+.input-cadastrar button,
+.buscar-produto button {
+    background-color: #F072AC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 10px 0;
+}
+
+.input-cadastrar button:hover,
+.buscar-produto button:hover {
+    background-color: #c03777;
+}
+
+/* TABELA */
+table {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #00a2ec;
+    color: #fff;
+}
+
+table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* AÇÕES NA TABELA */
+table button {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+table button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+table button:hover {
+    background-color: #a81222;
+}
+
+/* FOOTER */
+footer {
+    background-color: #00a2ec;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.links-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.rodape-atributos {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.rodape-atributos:hover {
+    color: #ffa048;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-cadastrar,
+    .buscar-produto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
