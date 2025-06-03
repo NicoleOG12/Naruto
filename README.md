@@ -31,10 +31,10 @@ De **Naruto Uzumaki** a **Sasuke Uchiha**, reviva os momentos mais épicos do an
 ---
 ## 👩‍🎓 Nomes
 
-- Ana luiza Viçosi Dourado 
-- Isabella Apolinario dos Santos 
-- Júlia Lins Pereira da Silva 
-- Nicole Oliveira Gonçalves
+- [Ana Luiza Viçosi Dourado](https://github.com/analuvicosi)
+- [Isabella Apolinario dos Santos](https://github.com/IsahApoli)
+- [Júlia Lins Pereira da Silva](https://github.com/linsjulia)
+- [Nicole Oliveira Gonçalves](https://github.com/NicoleOG12)
 ---
 
 ## 👨‍🏫 Professor
