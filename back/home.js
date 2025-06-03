@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // pega o nome do usuário logado da sessionStorage
   const usuario = sessionStorage.getItem("user");
   
-  // pega o usuarios de usuários do localStorage
+  // pega os usuarios do localStorage
   const usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
   // pega os elementos da página que serão manipulados
@@ -80,6 +80,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // verifica se o localStorage contém o array 'produtos'
+  const produtos = JSON.parse(localStorage.getItem('produtos'));
+
+  // verifica se existem produtos no localStorage
+  if (produtos && produtos.length > 0) {
+
+    const container = document.getElementById('produtos-container');
+    
+    // para cada produto um novo card
+    produtos.forEach(produto => {
+      const card = document.createElement('div');
+      card.classList.add('item'); 
+
+      // conteúdo HTML do card
+      card.innerHTML = `
+        <img src="${produto.imagem}" alt="${produto.nome}" class="produtos-img">
+        <p class="nome-produto">${produto.nome}</p>
+        <p class="preco-produto" style="bottom: 20px; position: relative;">R$${produto.preco.toFixed(2)} </p>
+        <div class="container-add-cart">
+          <a href="./carrinho.html">
+            <img src="./img/add-to-cart.png" alt="" class="icon-add-carrinho">
+          </a>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      `;
+
+      // adiciona o card ao contêiner
+      container.appendChild(card);
+    });
+  } else {
+    console.log("Nenhum produto encontrado no localStorage.");
+  }
+
   // cria uma chave única para o carrinho do usuário no localStorage
   const chaveCarrinho = `carrinho-${usuario}`;
   
@@ -141,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // salva o carrinho atualizado no localStorage
       localStorage.setItem(chaveCarrinho, JSON.stringify(comprar));
 
-      window.location.href = 'carrinho.html';  // redireciona para a página de carrinho
+      window.location.href = 'carrinho.html';
       alert("aperte finalizar compra para concluir o pagamento!"); 
       return;
     });

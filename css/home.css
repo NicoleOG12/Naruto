@@ -235,11 +235,7 @@ a:hover{
     height: 600px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;    
-    flex-wrap: wrap;
+.container{  
     align-content: center;
     margin-bottom: 5%;
     padding-top: 4%;
@@ -252,6 +248,14 @@ a:hover{
     box-shadow: 0 0 0 5px rgb(19, 19, 19);
 }
 
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .titulo-produtos{
     font-size: 40px;
     margin-bottom: 0%;
@@ -260,7 +264,6 @@ a:hover{
     font-weight: 500;
     font-style: normal;
     text-shadow: 1px 1px 8px Rgba(194, 87, 0, 0.712);
-    
 }
 
 .item{
