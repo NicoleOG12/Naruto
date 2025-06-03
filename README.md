@@ -35,8 +35,14 @@ De **Naruto Uzumaki** a **Sasuke Uchiha**, reviva os momentos mais épicos do an
 - Isabella Apolinario dos Santos 
 - Júlia Lins Pereira da Silva 
 - Nicole Oliveira Gonçalves
+---
 
 ## 👨‍🏫 Professor
 
 - Bruno Zolotareff dos Santos
+---
 
+## 👩‍💼 Login Admin
+
+- Email: admin@gmail.com
+- Senha: admin1234  
