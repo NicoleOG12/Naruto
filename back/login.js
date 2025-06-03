@@ -44,7 +44,7 @@ function logar() {
     for (let i = 0; i < admin.length; i++) {
         if (lg == admin[i].email && sn == admin[i].senha) {
             // se os dados estiverem corretos, armazena o admin logado
-            alert('Bem-vindo, Admin: ' + admin[i].nome);
+            alert('Bem-vindo: ' + admin[i].nome);
             localStorage.setItem('usuarioLogado', JSON.stringify(admin[i]));
             usuarioEncontrado = admin[i];  // marca como encontrado e sai do loop
        

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/admin.css">
-    <script src="./back/admin.js"></script>
+    <title>Naruto Pop</title>
+     <link rel="stylesheet" href="./css/admin.css">
+     <script src="./back/admin.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
- 
 </head>
-<body>
 
-      <header>
+<body>
+    <header>
         <div class="profile-name">
         <img src="img/Adobe Express - file.png" alt="" class="profile">
         </div>
         <nav>
 
-            <a class="a-nav" href="./login.html" id="usuario-link">
+             <a class="a-nav" href="./login.html" id="usuario-link">
                <div class="user">
                    <div class="userp">
                        <p id="nome-usuario">Login</p>
@@ -26,9 +26,33 @@
                    <i class="fas fa-user"></i>
                </div>
             </a>
-
         </nav>
     </header>
+
+     <div id="profileModal" class="modalPerfil" tabindex="-1" role="dialog">
+        <div class="modalPerfil-dialog" role="document">
+            <div class="modalPerfil-content">
+                <div class="modalPerfil-header">
+                    <h5 class="modalPerfil-title">Meu Perfil</h5>
+                    <button type="button" id="closeModalBtn" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modalPerfil-body">
+                    <i class="fas fa-user"></i>
+                    <br>
+                    <h4 id="usuario-nome"></h4>
+                    <p id="usuario-email"></p>
+                </div>
+                <div class="modalPerfil-footer">
+                    <button id="logoutBtn" class="btn-logout">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                    <button id="deleteAccountBtn" class="btn-delete">Excluir Conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <h1>Painel administrativo</h1>
  
@@ -69,6 +93,9 @@
         </div>
         <p>© 2025</p>
     </footer>
-
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
