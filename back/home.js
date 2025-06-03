@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // pega o nome do usuário logado da sessionStorage
   const usuario = sessionStorage.getItem("user");
   
-  // pega o banco de usuários do localStorage
-  const banco = JSON.parse(localStorage.getItem("banco"));
+  // pega o usuarios de usuários do localStorage
+  const usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
   // pega os elementos da página que serão manipulados
   const usuarioLink = document.getElementById("usuario-link");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // se o usuário estiver logado
   if (usuario) {
     // procura o usuário no localStorage
-    const usuarioLogado = banco.find(u => u.nome === usuario);
+    const usuarioLogado = usuarios.find(u => u.nome === usuario);
 
     // se o usuário for encontrado
     if (usuarioLogado) {
@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
       sessionStorage.removeItem("user");  // remove o usuário da sessionStorage
       localStorage.removeItem("usuarioLogado");  // remove o usuário do localStorage
 
-      // encontra o índice do usuário no banco de dados e o remove
-      const usuarioIndex = banco.findIndex(u => u.nome === usuario);
+      // encontra o índice do usuário no usuarios de dados e o remove
+      const usuarioIndex = usuarios.findIndex(u => u.nome === usuario);
       if (usuarioIndex !== -1) {
-        banco.splice(usuarioIndex, 1);  // remove o usuário
-        localStorage.setItem("banco", JSON.stringify(banco));  // atualiza o banco no localStorage
+        usuarios.splice(usuarioIndex, 1);  // remove o usuário
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));  // atualiza o banco no localStorage
       }
 
       alert("conta excluída.");
