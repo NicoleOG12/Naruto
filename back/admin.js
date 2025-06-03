@@ -20,7 +20,6 @@ function produtos() {
 
         // Salva produtos no localStorage
         localStorage.setItem('produtos', JSON.stringify(produtos));
-        localStorage.setItem('nextId', '13'); // Controla o próximo ID
     }
 }
 
@@ -38,11 +37,10 @@ function cadastrarProduto() {
         return;
     }
 
-    // Gera novo ID com base no contador
-    let nextId = parseInt(localStorage.getItem('nextId') || '1');
-
+    // Gera novo ID com base no último ID existente
+    const ultimoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) : 0;
     const novoProduto = {
-        id: nextId,
+        id: ultimoId + 1,
         nome: nome,
         preco: preco,
         imagem: imagem
@@ -51,7 +49,6 @@ function cadastrarProduto() {
     // Adiciona e salva no localStorage
     produtos.push(novoProduto);
     localStorage.setItem('produtos', JSON.stringify(produtos));
-    localStorage.setItem('nextId', nextId + 1);
 
     // Limpa campos
     document.querySelector('#imagemProduto').value = '';

@@ -141,6 +141,23 @@ h1 {
     padding: 10px;
 }
 
+.olho-animado {
+    animation: pulse 0.3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .container .form button {
     background-color: #007ce2;
 }
